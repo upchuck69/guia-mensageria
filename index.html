@@ -31,6 +31,68 @@
                 recebe essa mensagem e continua o processamento do pedido.
             </p>
         </section>
+
+        <section>
+            <h2>Produtor</h2>
+            <p>
+                O produtor é quem cria e envia uma mensagem. No exemplo da loja virtual,
+                o sistema de pedidos atua como produtor quando envia a informação de que
+                uma nova compra foi realizada.
+            </p>
+        </section>
+
+        <section>
+            <h2>Consumidor</h2>
+            <p>
+                O consumidor é quem recebe e processa a mensagem. Na loja virtual, pode
+                ser um serviço responsável por separar o produto, atualizar o estoque
+                ou continuar o processamento do pedido.
+            </p>
+        </section>
+
+        <section>
+            <h2>Broker</h2>
+            <p>
+                O broker funciona como um intermediário entre o produtor e o consumidor.
+                Ele recebe as mensagens enviadas e ajuda a encaminhá-las para quem deverá
+                processá-las.
+            </p>
+        </section>
+
+        <section>
+            <h2>Fila</h2>
+            <p>
+                A fila organiza e mantém as mensagens até que elas possam ser processadas.
+                Dessa forma, mesmo que várias mensagens sejam enviadas, elas podem aguardar
+                o momento adequado para serem tratadas pelos consumidores.
+            </p>
+        </section>
+
+        <section>
+            <h2>Comunicação assíncrona</h2>
+            <p>
+                Na comunicação assíncrona, o envio da mensagem e o seu processamento não
+                precisam acontecer exatamente no mesmo momento. O produtor pode enviar a
+                informação e continuar funcionando enquanto o consumidor realiza a tarefa
+                quando estiver disponível.
+            </p>
+        </section>
+
+        <section>
+            <h2>Fluxo de um pedido</h2>
+            <p>
+                Pedido recebido → mensagem enviada → broker recebe e organiza a mensagem
+                → consumidor processa o pedido.
+            </p>
+
+            <p>
+                Nesse exemplo, o sistema da loja atua como produtor, o broker faz a
+                intermediação da mensagem e o consumidor realiza o processamento. Uma
+                vantagem desse modelo é permitir que diferentes partes do sistema
+                trabalhem de forma mais independente, evitando que uma tarefa precise
+                esperar imediatamente pela conclusão de outra.
+            </p>
+        </section>
     </main>
 </body>
 
